@@ -357,7 +357,7 @@ Question: What do you think about Inflation?
 
 ---
 
-## Outlook Polkadot 2.0
+## Outlook on the future of Polkadot
 
 <ul>
     <li class="fragment">Based on Gav’s Keynote at Polkadot Decoded 2023.</li>
@@ -383,7 +383,7 @@ Question: What do you think about Inflation?
 ## Blockspace Ecosystem
 
 <ul>
-    <li class="fragment">A networked collection of individual blockspace producers (blockchains) fit-for-purpose, efficiently-allocated, and cost-effective blockspace.</li>
+    <li class="fragment">A networked collection of individual blockspace producers (blockchains) of fit-for-purpose, efficiently-allocated, and cost-effective blockspace.</li>
     <li class="fragment">Ecosystem is a connective tissue of shared security and composability.</li>
     <li class="fragment">Dapp developers or blockspace providers can focus on their unique features, reusing existing capabilities within the ecosystem.</li>
     <li class="fragment">For example, a supply chain traceability application could use different types of blockspace for identity verification, asset tokenization, and source traceability.</li>
@@ -391,10 +391,11 @@ Question: What do you think about Inflation?
 
 ---
 
-## Bulk markets
+## Coretime Markets
 
 <ul>
-    <li class="fragment">It's not yet finalized how they work but likely:</li>
+    <li class="fragment">Slot auctions will (probably?) be deprecated.</li>
+<li class="fragment">Bulk Markets</li>
     <ul>
         <li class="fragment">Around 75% of cores are allocated to the market.</li>
         <li class="fragment">Cores are sold for 4 weeks as NFT by a broker.</li>
@@ -402,15 +403,18 @@ Question: What do you think about Inflation?
         <li class="fragment">Price de-/increases relative to demand.</li>
         <li class="fragment">Current tenants have a priority buy right for their core(s).</li>
     </ul>
+<li class="fragment">Unsold coretime goes to instantanous market.</li>
 </ul>
 
 ---
 
 ## Brokerage Chain
 
-- System Parachain that handles the Bulk sales.
-- Instructs the Relay Chain how many cores should be made available during the next session.
-- Which para IDs are allocated to which cores.
+<ul>
+    <li class="fragment">System Parachain that handles the Bulk sales.</li>
+    <li class="fragment">Instructs the Relay Chain how many cores should be made available during the next session.</li>
+    <li class="fragment">Which para IDs are allocated to which cores.</li>
+</ul>
 
 ---
 
@@ -447,7 +451,7 @@ Question: What do you think about Inflation?
     <li class="fragment">The DOT token captures the utility that the parachains provide and converts it to security.</li>
     <li class="fragment">The slot mechanics (renewal, auctions) creates a market where parachains need to outcompete opportunity costs to be sustainable (i.e., they need to be useful).</li>
     <li class="fragment">Polkadot is a DAO that will be able to fund its own preservation and evolution.</li>
-    <li class="fragment">There are many changes to come with Polkadot 2.0 creating a much more agile system.</li>
+    <li class="fragment">There are many changes to come to Polkadot creating a much more agile system.</li>
 </ul>
 
 ---
@@ -457,7 +461,7 @@ Question: What do you think about Inflation?
 
 - [Agile Coretime RFC](https://github.com/polkadot-fellows/RFCs/pull/1)
 - [Discussion on Changing Inflation Model](https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301)
-- [Gav's Talk about Polkadot 2.0](https://www.youtube.com/watch?v=GIB1WeVuJD0)
+- [Gav's Talk about Polkadot UC](https://www.youtube.com/watch?v=GIB1WeVuJD0)
 - [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
 - [Talk About Validator Selection Tool](https://www.youtube.com/watch?v=RlYTtC7jIzI)
 - [State of the Polkadot & KUsama Treasury](https://jonasw3f.github.io/treasury_polkadot_kusama_hosted/)
