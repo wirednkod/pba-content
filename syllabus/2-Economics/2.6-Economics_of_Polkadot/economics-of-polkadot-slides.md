@@ -138,6 +138,8 @@ Question: What do you think about Inflation?
     <li class="fragment">Then, Treasury inflow would be 0 DOT.</li>
     <li class="fragment">That is not sustainable.</li>
     <li class="fragment">Proposed change: Detach inflation to stakers from total inflation and divert the rest to Treasury directly.</li>
+    <li class="fragment"><a href="https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301/1">Forum Discussion</a>
+</li>
 </ul>
 
 ---
