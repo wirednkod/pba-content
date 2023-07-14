@@ -310,65 +310,11 @@ Question: What do you think about Inflation?
 
 ---
 
-## Outlook Polkadot 2.0
-
-<ul>
-    <li class="fragment">Based on Gav’s Keynote at Polkadot Decoded 2023.</li>
-    <li class="fragment">A new narrative of the whole Polkadot system.</li>
-    <li class="fragment">We move away from regarding Parachains as a distinct entity but rather regard Polkadot as global distributed computer.</li>
-    <li class="fragment">It's spaces and apps rather than chains.</li>
-    <li class="fragment">This computer has computation cores that can be allocated flexible to applications that need it.</li>
-    <li class="fragment">Corestime can be bought, shared, resold.</li>
-</ul>
-
----
-
-## Core Attributes of Blockspace
-
-<ul>
-    <li class="fragment"><strong>Security</strong>: The scarcest resource in blockchain, crucial in preventing consensus faults or 51% attacks that could compromise transactions.</li>
-    <li class="fragment"><strong>Availability</strong>: Ensuring blockspace is available without long waiting times or uncertain costs for a smooth, seamless interaction within the decentralized ecosystem.</li>
-    <li class="fragment"><strong>Flexibility</strong>: The ability of blockspace to be fine-tuned by the consumer for specific use-cases.</li>
-</ul>
-
----
-
-## Blockspace Ecosystem
-
-<ul>
-    <li class="fragment">A networked collection of individual blockspace producers (blockchains) offering secured, fit-for-purpose, efficiently-allocated, and cost-effective blockspace.</li>
-    <li class="fragment">A valuable aspect of a blockspace ecosystem is its connective tissue of shared security and composability.</li>
-    <li class="fragment">Dapp developers or blockspace providers can focus on their unique features, reusing existing capabilities within the ecosystem.</li>
-    <li class="fragment">For example, a supply chain traceability application could use different types of blockspace for identity verification, asset tokenization, and source traceability.</li>
-</ul>
-
----
-
-## Bulk markets
-
-<ul>
-    <li class="fragment">It's not yet finalized how they work but likely:</li>
-    <ul>
-        <li class="fragment">Around 75% of cores are allocated to the market.</li>
-        <li class="fragment">Cores are sold for 4 weeks as NFT by a broker.</li>
-        <li class="fragment">Unrented cores go to the instantaneous market.</li>
-        <li class="fragment">Price de-/increases relative to demand.</li>
-        <li class="fragment">Current tenants have a priority buy right for their core(s).</li>
-    </ul>
-</ul>
-
----
-
-## Why the change?
-
-<ul>
-    <li class="fragment">This allows for low barriers of entry for people to simply deploy their code to a core and test stuff</li>
-    <li class="fragment">It makes blockspace more efficient, because not all teams can/want to have a full block every 6/12 seconds.</li>
-</ul>
-
----
-
 # Treasury
+
+---
+
+## Treasury
 
 <ul>
     <li class="fragment">The treasury is an on-chain fund that holds DOT token and is governed by all token holders of the network.</li>
@@ -385,12 +331,11 @@ Question: What do you think about Inflation?
 
 ---
 
-## Treasury as DAO
+## Treasury
 
 <ul>
-    <li class="fragment">A DAO (decentralized autonomous organization) that has access to funds and can make funding decisions directed by the collective (that have vested interest in the network).</li>
-    <li class="fragment">This has huge potential that might not yet have been fully recognized by the people.</li>
-    <li class="fragment">This provides the chain the power to fund its own existence and improves the utility in the future. It will pay…</li>
+    <li class="fragment">It allows to fund it's own existence and improves the utility in the future.</li>
+    <li class="fragment">It will pay…</li>
     <ul>
         <li class="fragment">… <strong>core developers</strong> to improve the protocol.</li>
         <li class="fragment">… <strong>researchers</strong> to explore new directions, solve problems and conduct studies that are beneficial for the network.</li>
@@ -412,6 +357,88 @@ Question: What do you think about Inflation?
 
 ---
 
+## Outlook Polkadot 2.0
+
+<ul>
+    <li class="fragment">Based on Gav’s Keynote at Polkadot Decoded 2023.</li>
+    <li class="fragment">A new perspective of the whole Polkadot system.</li>
+    <li class="fragment">We move away from regarding Parachains as a distinct entity but rather regard Polkadot as global distributed computer.</li>
+    <li class="fragment">It's spaces and apps rather than chains.</li>
+    <li class="fragment">This computer has computation cores that can be allocated flexible to applications that need it.</li>
+    <li class="fragment">Corestime can be bought, shared, resold.</li>
+</ul>
+
+---
+
+## Core Attributes of Blockspace
+
+<ul>
+    <li class="fragment"><strong>Security</strong>: The scarcest resource in blockchain, crucial in preventing consensus faults or 51% attacks that could compromise transactions.</li>
+    <li class="fragment"><strong>Availability</strong>: Ensuring blockspace is available without long waiting times or uncertain costs for a smooth, seamless interaction within the decentralized ecosystem.</li>
+    <li class="fragment"><strong>Flexibility</strong>: The ability of blockspace to be fine-tuned by the consumer for specific use-cases.</li>
+</ul>
+
+---
+
+## Blockspace Ecosystem
+
+<ul>
+    <li class="fragment">A networked collection of individual blockspace producers (blockchains) fit-for-purpose, efficiently-allocated, and cost-effective blockspace.</li>
+    <li class="fragment">Ecosystem is a connective tissue of shared security and composability.</li>
+    <li class="fragment">Dapp developers or blockspace providers can focus on their unique features, reusing existing capabilities within the ecosystem.</li>
+    <li class="fragment">For example, a supply chain traceability application could use different types of blockspace for identity verification, asset tokenization, and source traceability.</li>
+</ul>
+
+---
+
+## Bulk markets
+
+<ul>
+    <li class="fragment">It's not yet finalized how they work but likely:</li>
+    <ul>
+        <li class="fragment">Around 75% of cores are allocated to the market.</li>
+        <li class="fragment">Cores are sold for 4 weeks as NFT by a broker.</li>
+        <li class="fragment">Unrented cores go to the instantaneous market.</li>
+        <li class="fragment">Price de-/increases relative to demand.</li>
+        <li class="fragment">Current tenants have a priority buy right for their core(s).</li>
+    </ul>
+</ul>
+
+---
+
+## Brokerage Chain
+
+- System Parachain that handles the Bulk sales.
+- Instructs the Relay Chain how many cores should be made available during the next session.
+- Which para IDs are allocated to which cores.
+
+---
+
+## Accords
+
+<ul>
+    <li class="fragment">Accords form opt-in unified spaces of trustworthy execution environment.</li>
+    <li class="fragment">XCM a language to formalize intent across chains.</li>
+    <li class="fragment">XCM-Protocol transmits this intent securely.</li>
+        <ul>
+        <li class="fragment">This doesn't mean that the intent is executed.</li>
+        <li class="fragment">Powered by SPREE modules. </li>
+        </ul>
+    <li class="fragment">Accords make it possible that you can trust your message gets executed on another chain.</li>
+</ul>
+
+---
+
+## Why the change?
+
+<ul>
+    <li class="fragment">This allows for low barriers of entry for people to simply deploy their code to a core and test stuff</li>
+    <li class="fragment">It makes blockspace more efficient, because not all teams can/want to have a full block every 6/12 seconds.</li>
+</ul>
+
+---
+
+
 ## Takeaways
 
 <ul>
@@ -432,3 +459,5 @@ Question: What do you think about Inflation?
 - [Discussion on Changing Inflation Model](https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301)
 - [Gav's Talk about Polkadot 2.0](https://www.youtube.com/watch?v=GIB1WeVuJD0)
 - [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
+- [Talk About Validator Selection Tool](https://www.youtube.com/watch?v=RlYTtC7jIzI)
+- [State of the Polkadot & KUsama Treasury](https://jonasw3f.github.io/treasury_polkadot_kusama_hosted/)
