@@ -435,6 +435,19 @@ Question: What do you think about Inflation?
 
 ---
 
+## Polkadot Evolves
+
+   <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="flex: 1; text-align: center;" class="fragment" data-fragment-index="0">
+        <img style="width: 80%; margin-right: 50px;" src="../../../assets/img/2-Economics/2.6-polkadot-relay.png" alt="first image" />
+    </div>
+    <div style="flex: 1; text-align: center;" class="fragment" data-fragment-index="1">
+        <img style="width: 80%;" src="../../../assets/img/2-Economics/2.6-polkadot-agile.png" alt="second image" />
+    </div>
+</div>
+
+---
+
 ## Why the change?
 
 <ul>
