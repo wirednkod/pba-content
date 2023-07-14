@@ -367,7 +367,7 @@ Question: What do you think about Inflation?
     <li class="fragment">We move away from regarding Parachains as a distinct entity but rather regard Polkadot as global distributed computer.</li>
     <li class="fragment">It's spaces and apps rather than chains.</li>
     <li class="fragment">This computer has computation cores that can be allocated flexible to applications that need it.</li>
-    <li class="fragment">Corestime can be bought, shared, resold.</li>
+    <li class="fragment">Coretime can be bought, shared, resold.</li>
 </ul>
 
 ---
@@ -479,4 +479,4 @@ Question: What do you think about Inflation?
 - [Gav's Talk about Polkadot UC](https://www.youtube.com/watch?v=GIB1WeVuJD0)
 - [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
 - [Talk About Validator Selection Tool](https://www.youtube.com/watch?v=RlYTtC7jIzI)
-- [State of the Polkadot & KUsama Treasury](https://jonasw3f.github.io/treasury_polkadot_kusama_hosted/)
+- [State of the Polkadot & Kusama Treasury](https://jonasw3f.github.io/treasury_polkadot_kusama_hosted/)
