@@ -101,8 +101,8 @@ Notes:
 
 ## More like _Light-weight Formal Methods_
 
-1. Rigorously **detecting bugs** → proving overall correctness of system.
-1. Developer-centric **Usability** (e.g. workflow integration)
+- Rigorously **detecting bugs** >> proving correctness of system.
+- Developer-centric **Usability** (e.g. workflow integration)
 
 Notes:
 
@@ -152,6 +152,40 @@ Notes:
 ## Tools Landscape
 
 <img rounded style="width: 700px" src="./img/Landscape.svg">
+---
+  <diagram class="mermaid">
+    %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+    flowchart TD
+      A(Start) --> B{Is it?};
+      B -- Yes --> C(OK);
+      C --> D(Rethink);
+      D --> B;
+      B -- No ----> E(End);
+  </diagram>
+
+---
+ <diagram class="mermaid">
+    %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+  quadrantChart
+    title Verification Tools
+    x-axis Low Automation --> High Automation
+    y-axis Low Expressiveness --> High Expressiveness
+    
+    Isabelle: [0.15, 0.8]
+    Coq: [0.18, 0.75]
+    Quint/TLA+: [0.23, 0.6]
+    MIRAI: [0.58, 0.34]
+    KANI: [0.62, 0.4]
+    Crux-MIR: [0.67,0.36]
+    Flux: [0.67,0.30]
+    State-Right: [0.3, 0.54]
+    Prusti: [0.4,0.48]
+    Substrace: [0.9,0.23]
+    Flowistry: [0.8, 0.25]
+    Clippy: [0.99,0.17]
+
+  </diagram>
+
 
 Notes:
 
@@ -214,8 +248,6 @@ Notes:
 
 - Code-level
 - Information/ dataflow properties; access control for code;
-- Specify expected behavior (properties).
-  Roundtrip property: decode (encode (x)) == x
 - Default checks: bugs like arithmetic overflow, out-of-bound access panics
 
 </pba-col>
@@ -223,7 +255,7 @@ Notes:
 
 Notes:
 
-- Eg. for code access control: ensure that certain sensitive parts of runtime are only accessible by Root origin
+- Eg. for code access control: ensure that certain sensitive variables of runtime are only accessible by Root origin
 - MIRAI is developed by Meta uses technique called abstract interpretation;
   specifically useful for detecting panics statically and information flow properties
 - Kani: we will dive deeper soon
@@ -326,7 +358,7 @@ Property: `decode(encode(x)) == x`
 
 Test
 
-```rust
+```rust [3]
 #[cfg(test)]
 fn test_u32 {
   let val: u16 = 42;
@@ -343,7 +375,7 @@ fixed value `42`
 
 Fuzzing
 
-```rust
+```rust [3]
 #[cfg(fuzzing)]
 fuzz_target!(|data: &[u8]|) {
   let val = u16::arbitrary(data);
@@ -361,7 +393,7 @@ multiple random values of `u16`
 
 Kani Proof
 
-```rust
+```rust [4]
 #[cfg(kani)]
 #[kani::proof]
 fn proof_u32_roundtrip {
@@ -450,7 +482,7 @@ z != 7 /\ w != 9 (negation of the assert condition)
 
 ---v
 
-## Demo: Unwinding Loops
+## Unwinding Loops
 
 ```rust
 fn initialize_prefix(length: usize, buffer: &mut [u8]) {
@@ -527,7 +559,7 @@ impl<'a> Arbitrary<'a> for Rgb {
 
 **Open Ended properties!**
 
-- _RoundTrip_: `Decode (Encode (x)) == x`
+- _RoundTrip_: `Decode(Encode(x)) == x`
 - `DecodeLength(x) == Decode(x).length()`
 - `EncodeAppend(vec,item) == Encode(vec.append(item))`
 - ......
